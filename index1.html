@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on DOM</title>
+</head>
+<body>
+   <h1>Welcome to JavaScript BootCamp</h1>
+   <!-- <button onmouseenter="hello()" id="js">Click me</button> -->
+     <!-- <p id="js"></p>-->
+
+     Enter your Name:
+     <input type="text" name="name" id="input" />
+     <p id="js"></p>
+   
+   <script>
+    // function hello(){
+    //     document.getElementById("js").style.backgroundColor = "Red" ;
+    // }
+   //  document.addEventListener("dblclick", mouseClick);
+   //  function mouseClick() {
+   //      document.querySelector("#js").innerText = "hello JS Bootcamp" ;
+   //  }
+   document.addEventListener("input", input);
+   function input() {
+    var one = document.getElementById("input").value;
+    document.getElementById("js").innerText = 
+    "You are writing "  +  one.toUpperCase();
+   }
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on DOM</title>
+    
+</head>
+<body>
+   <h1>Welcome to JavaScript BootCamp</h1>
+   <p id="js"></p>
+   <button onclick="maths()" id="prompt">Submit</button>
+   <script>
+    // alert
+    // alert("Hela Developer");
+    //window.alert("Hello JS");
+    // Confirmation Box
+   // let val = confirm("Are you sure ?");
+   // if (val) {
+   //  document.getElementById("js").innerHTML = "He Pressed OK";
+   // }else{
+   //  document.getElementById("js").innerHTML = "He Pressed Cancel";
+   // }
+   // Prompt
+    // let value = prompt("please slove 20-10","0");
+    // if (value == 10) {
+    //    document.getElementById("js").innerHTML = "Ticket Booked successfully"; 
+    // }else{
+    //    document.getElementById("js").innerHTML = "Failed";
+    // }
+    function maths() {
+    let value = prompt("please slove 20-10","0");
+    if (value == 10) {
+        document.getElementById("js").innerHTML = "Ticket Booked successfully"; 
+     }else{
+       document.getElementById("js").innerHTML = "Failed";
+     }
+
+    }
+   </script> 
+</body>
+</html>
